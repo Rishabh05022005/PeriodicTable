@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 5px;
+}
+
+.element {
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+
+
+.element .number {
+    font-size: 12px;
+    color: #333;
+}
+
+.element .symbol {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.element .name {
+    font-size: 10px;
+    color: #555;
+}
+
+
+.hydrogen {
+    background-color: #39FF14;
+}
+
+.group18 {
+    background-color: #3366ff;
+}
+.group1 {
+    background-color :#ffb3cc;
+}
+.group2 {
+    background-color :#ffdb4d;
+}
+
+.transition {
+    background-color : #8c66ff;
+}
+
+.post {
+    background-color : #00e6ac;
+}
+.unknown {
+    background-color : #b3b3cc;
+}
+.metalloid{
+    background-color : #ff5c33;
+}
+.reactive{
+    background-color : #aaff80;
+}
+.lanthanoid{
+    background-color : #ff66d9;
+
+}
+.act{
+    background-color : #dd99ff;
+}
