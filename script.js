@@ -10,11 +10,11 @@ document.querySelectorAll('.element').forEach(element => {
         const number = element.getAttribute('data-number');
         const symbol = element.getAttribute('data-symbol');
         const name = element.getAttribute('data-name');
-        
+        const description = element.getAttribute('data-description');
+
         Swal.fire({
             title: `${name} (${symbol})`,
-            text: `Atomic Number: ${number}`,
-            icon: 'info',
+            html: `<p><strong>Atomic Number:</strong> ${number}</p><p>${description}</p>`,
             confirmButtonText: 'OK',
             customClass: {
                 popup: 'small-alert',
@@ -28,8 +28,6 @@ document.querySelectorAll('.element').forEach(element => {
                 // Re-enable scrolling after the alert closes
                 document.body.style.overflow = '';
             }
-
         });
     });
 });
-
