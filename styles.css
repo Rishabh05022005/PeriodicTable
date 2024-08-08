@@ -1,11 +1,17 @@
-/* Existing CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html {
     overflow-y: hidden;
 }
 
+P{
+    font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 body {
     background: rgba(0, 0, 0, 0.895);
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     margin-top: 2rem;
     display: flex;
@@ -315,4 +321,11 @@ button .name {
     }
 }
 
+/* .lanth{
+    position: absolute;
+    color: whitesmoke;
+    z-index: 99;
+    top: 30rem;
+    left: 8rem;
+} */
 
